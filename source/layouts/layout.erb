@@ -1,19 +1,15 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= data.page.title || "The Middleman" %></title>
-    
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
-  </head>
-  
-  <body class="<%= page_classes %>">
-    <%= yield %>
-  </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+<title>Kabisa ICT - Ruby on Rails & Java experts</title>
+<meta name="description" content="Experts in Ruby on Rails and Java technology. Experts in Agile Scrum. Kabisa develops enterprise web applications." />
+<meta name="keywords" content="kabisa, ruby on rails, rubyonrails, java, j2ee, ruby, scrum, ruby developers" />
+
+<%= stylesheet_link_tag "application"  %>
+<%= javascript_include_tag  "application" %>
+</head>
+<body class='web-applications' id='hello'>
+<%= yield %>
+</body>
 </html>
