@@ -1,0 +1,10 @@
+#left_column, #right_column {
+  @include rhythm(2,0,0,0);
+  h2 {
+    @include adjust-font-size-to(20px);
+    @include rhythm(0,0,0,0, 20px);
+  }
+  p, ul {
+    @include rhythm(0,0,0,1);
+  }
+}

@@ -1,0 +1,16 @@
+#menu {
+  nav {
+    @include margin-leader(0);
+    ul {
+      li, li.lang-version {
+        a {
+          @include padding-leader(0);
+          @include padding-trailer(0);
+        }
+      }
+    }
+  }
+  h1 {
+    @include adjust-font-size-to(25px);
+  }
+}

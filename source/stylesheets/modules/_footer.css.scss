@@ -1,0 +1,15 @@
+#footer {
+  @include rhythm(2,2,0,0);
+
+}
+.footer_col {
+  h1 {
+    @include adjust-font-size-to(14px);
+  }
+  p, ul {
+    @include adjust-font-size-to(11px);
+  }
+  .hiring {
+    @include rhythm(1,0,0,0);
+  }
+}

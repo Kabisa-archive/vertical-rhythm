@@ -1,0 +1,9 @@
+#featured_text {
+  @include rhythm(2,0,0,0);
+  h1 {
+    @include adjust-font-size-to(25px);
+  }
+  p {
+    @include adjust-leading-to(1);
+  }
+}
