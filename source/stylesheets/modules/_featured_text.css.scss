@@ -1,5 +1,9 @@
 #featured_text {
   @include rhythm(2,0,0,0);
+  margin: {
+    left: 2em;
+    right: 2em;
+  }
   h1 {
     @include adjust-font-size-to(25px);
   }

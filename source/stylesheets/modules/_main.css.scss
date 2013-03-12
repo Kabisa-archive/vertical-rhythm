@@ -1,5 +1,5 @@
 #main {
-  @include rhythm(0,1,0,10);
+  @include rhythm(0,0,0,10);
   p, li {
     @include adjust-leading-to(1);
   }

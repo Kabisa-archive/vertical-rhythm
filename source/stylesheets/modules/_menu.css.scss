@@ -1,6 +1,7 @@
 #menu {
   nav {
     @include margin-leader(0);
+    @include adjust-font-size-to(13px);
     ul {
       li, li.lang-version {
         a {
@@ -11,6 +12,7 @@
     }
   }
   h1 {
-    @include adjust-font-size-to(25px);
+    @include adjust-font-size-to(32px);
+    @include rhythm(2,0,0,0,32px);
   }
 }

@@ -1,11 +1,11 @@
 blockquote.testimonial {
   @include adjust-leading-to(2);
-  @include rhythm(0,1,0,0);
+  @include rhythm(2,0,0,0);
   .quote {
     @include rhythm(0,.5,.5,0);
   }
-  .quote_from {
-    @include adjust-font-size-to(12px);
-    @include rhythm(0,1,1,0, 12px);
+  div.quote_from {
+    @include adjust-font-size-to($base-font-size);
+    @include rhythm(1,0,0,1);
   }
 }
