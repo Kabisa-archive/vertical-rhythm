@@ -1,9 +1,5 @@
 #left_column, #right_column {
   @include rhythm(1,0,0,0);
-  h2 {
-    @include adjust-font-size-to(20px);
-    @include rhythm(.5,0,0,.5, 20px);
-  }
   p, ul {
     @include rhythm(0,0,0,1);
   }

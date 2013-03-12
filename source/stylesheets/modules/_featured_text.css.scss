@@ -5,7 +5,7 @@
     right: 2em;
   }
   h1 {
-    @include adjust-font-size-to(25px);
+    @include adjust-font-size-to($featured-text-header-font-size);
   }
   p {
     @include adjust-leading-to(1);

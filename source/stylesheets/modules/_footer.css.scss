@@ -4,10 +4,10 @@
 }
 .footer_col {
   h1 {
-    @include adjust-font-size-to(14px);
+    @include adjust-font-size-to($footer-header-font-size);
   }
   p, ul {
-    @include adjust-font-size-to(11px);
+    @include adjust-font-size-to($footer-font-size);
   }
   .hiring {
     @include rhythm(1,0,0,0);

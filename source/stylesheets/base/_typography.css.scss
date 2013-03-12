@@ -1,7 +1,4 @@
-@import "compass/typography/vertical_rhythm";
-
-$base-font-size: 14px;
-$base-line-height: 23px;
+@import 'compass/typography/vertical_rhythm';
 
 @include establish-baseline;
 
@@ -9,4 +6,20 @@ body {
   font-size: inherit;
   line-height: inherit;
   @include margin-leader(1);
+}
+p {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+h1 {
+  @include adjust-font-size-to($h1-font-size);
+  @include rhythm(2,0,0,0,$h1-font-size);
+}
+h2 {
+  @include adjust-font-size-to($h2-font-size);
+  @include rhythm(.5,0,0,.5,$h2-font-size);
+}
+h3 {
+  @include adjust-font-size-to($h3-font-size);
 }

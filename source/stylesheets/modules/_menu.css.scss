@@ -1,18 +1,15 @@
 #menu {
   nav {
     @include margin-leader(0);
-    @include adjust-font-size-to(13px);
+    @include adjust-font-size-to($menu-font-size);
     ul {
       li, li.lang-version {
         a {
           @include padding-leader(0);
           @include padding-trailer(0);
+          padding-right: 7px;
         }
       }
     }
-  }
-  h1 {
-    @include adjust-font-size-to(32px);
-    @include rhythm(2,0,0,0,32px);
   }
 }
