@@ -5,9 +5,7 @@
     ul {
       li, li.lang-version {
         a {
-          @include padding-leader(0);
-          @include padding-trailer(0);
-          padding-right: 7px;
+          padding: rhythm(0) 3px;
         }
       }
     }

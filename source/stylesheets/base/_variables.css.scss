@@ -1,28 +1,18 @@
-/*$base-font-size: 14px;*/
-/*$base-line-height: 23px;*/
+@import 'modular-scale';
 
-/*$h1-font-size: 32px;*/
-/*$h2-font-size: 20px;*/
-/*$h3-font-size: 14px;*/
-
-/*$featured-text-header-font-size: 25px;*/
-
-/*$footer-header-font-size: $base-font-size;*/
-/*$footer-font-size: 11px;*/
-
-/*$menu-font-size: 13px;*/
-// http://modularscale.com/scale/?px1=14&px2=552&ra1=1.618&ra2=0
-
-$base-font-size: 14px;
+$base-font-size: 14px; // Scale origin
 $base-line-height: 23px;
+// http://modularscale.com/scale/?px1=14&px2=552&ra1=1.618&ra2=0
+$base-size: $base-font-size 552px;
+$ratio: golden_ratio();
 
-$h1-font-size: 30px;
-$h2-font-size: 19px;
-$h3-font-size: 14px;
+$h1-font-size: ms(3);
+$h2-font-size: ms(1);
+$h3-font-size: ms(0);
 
-$featured-text-header-font-size: 22px;
+$featured-text-header-font-size: ms(2);
 
 $footer-header-font-size: $base-font-size;
-$footer-font-size: 11.7px;
+$footer-font-size: ms(-1);
 
 $menu-font-size: $base-font-size;
