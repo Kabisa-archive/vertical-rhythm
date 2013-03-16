@@ -1,7 +1,10 @@
 blockquote.testimonial {
-  @include adjust-leading-to(2);
-  @include rhythm(2,0,0,0);
+  @include rhythm(1,0,0,0);
   .quote {
+    // This seems to break the rhythm, due to rounding errors:
+     @include adjust-leading-to(2);
+    // but this doesn't:
+    line-height: 2*$base-line-height;
     @include rhythm(0,.5,.5,0);
   }
   div.quote_from {
