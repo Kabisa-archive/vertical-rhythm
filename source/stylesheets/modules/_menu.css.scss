@@ -10,4 +10,10 @@
       }
     }
   }
+  .lang-version-url {
+    display: inline-block;
+  }
+  h1 {
+    @include rhythm(2,0,0,0,$h1-font-size);
+  }
 }
