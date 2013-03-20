@@ -1,0 +1,19 @@
+#left_contact, #right_contact {
+  @include rhythm(0,0,0,0);
+  /*p, ul {*/
+    /*@include rhythm(0,0,0,1);*/
+  /*}*/
+  p {
+    @include rhythm(0,0,0,0);
+  }
+}
+
+#right_contact {
+  > iframe {
+    height: rhythm(19, $base-font-size);
+  }
+  p.google-directions {
+    @include adjust-font-size-to($footer-font-size);
+    text-align: right;
+  }
+}

@@ -1,0 +1,11 @@
+#fresh {
+  @include rhythm(2,0,0,0);
+  p {
+    @include adjust-leading-to(1);
+  }
+
+}
+
+#main .wrapper #fresh.contact p {
+  @include rhythm(2,0,0,0);
+}

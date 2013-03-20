@@ -9,7 +9,7 @@
 <%= stylesheet_link_tag 'application', 'site'  %>
 <%= javascript_include_tag  "application" %>
 </head>
-<body class='web-applications' id='hello'>
+<body class='<%= yield_content(:class_name) %>' id='hello'>
 <div class='wrapper'>
   <div id='menu'>
     <nav id='menu' class='menu'>
@@ -39,7 +39,7 @@
         <li>
         <a href="http://blog.kabisa.nl/">Blog</a></li>
         <li class='last'>
-        <a href="/contact">Contact</a></li>
+        <a href="/contact.html">Contact</a></li>
       </ul>
     </nav>
 

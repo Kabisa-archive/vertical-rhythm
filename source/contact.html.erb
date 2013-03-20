@@ -1,0 +1,62 @@
+<% content_for(:class_name, 'contact') %>
+
+<div class="wrapper">
+  <div id="featured"><p><img src="/assets/craftsmen.png" title="Craftsmen" alt="Craftsmen" rel="225x255" width="200" height="225"></p></div>
+  <div class="small" id="featured_text">
+    <h1>Get in touch!</h1>
+    <p>Marconilaan 8 <br>6003 DD Weert <br>Get directions The Netherlands<br>KvK: 14090089</p></div>
+  <div class="contact" id="fresh">
+    <p>
+    Phone: +31 495 430 798
+    <br>
+    Fax: +31 847 355 292
+    <br>
+    Info:
+    <a href="mailto:info@kabisa.nl">info at kabisa.nl</a>
+    <br>
+    Support:
+    <a href="mailto:support@kabisa.nl">support at kabisa.nl</a>
+    </p>
+  </div>
+</div>
+<div class="wrapper">
+  <div id="left_column">
+    <div id="left_contact">
+      <h2>Send us a message</h2>
+      <br>
+      <form accept-charset="UTF-8" action="/contact" class="new_inquiry" id="new_inquiry" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="AqyePh+vdCXMz5hb/SgVzadg9zSQweSKxhiFGPj0Uuk="></div>
+
+        <p>
+        <label class="placeholder-fallback" for="inquiry_name">Name *</label>
+        <input class="text" id="inquiry_name" name="inquiry[name]" required="required" size="30" type="text">
+        </p>
+        <p>
+        <label class="placeholder-fallback" for="inquiry_email">Email *</label>
+        <input class="text email" id="inquiry_email" name="inquiry[email]" required="required" size="30" type="text">
+        </p>
+        <p>
+        <label class="placeholder-fallback" for="inquiry_phone">Phone</label>
+        <input class="text phone" id="inquiry_phone" name="inquiry[phone]" size="30" type="text">
+        </p>
+        <p>
+        <label class="placeholder-fallback" for="inquiry_message">Message *</label>
+        <textarea class="text" cols="40" id="inquiry_message" name="inquiry[message]" required="required" rows="8"></textarea>
+        </p>
+        <div class="actions">
+          <input alt="Send contact form" border="0" src="/assets/sendBtn.gif" style="background-color: #fff;" type="image" value="send">
+        </div>
+      </form>
+    </div>
+    <div id="right_contact">
+      <h2>Directions</h2>
+      <br>
+      <iframe frameborder="0" height="320" marginheight="0" marginwidth="0" src="http://maps.google.nl/maps?q=Kabisa+BV,+Marconilaan+8,+6003+Weert@51.272050,5.7370&amp;ie=UTF8&amp;z=14&amp;output=embed&amp;num=1&amp;mrt=loc&amp;ll=51.272050,5.7370&amp;t=m&amp;hl=nl&amp;iwloc=near" width="580"></iframe>
+      <p class='google-directions'>
+      <a href="http://maps.google.nl/maps?q=Kabisa+BV,+Marconilaan+8,+6003+Weert%4051.272050,5.7370&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;t=m&amp;z=14&amp;ll=51.27205,5.737&amp;source=embed">
+        Get directions from Google Maps »
+      </a>
+      </p>
+    </div>
+
+  </div>
+</div>
