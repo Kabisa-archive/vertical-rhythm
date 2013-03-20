@@ -10,6 +10,106 @@
 <%= javascript_include_tag  "application" %>
 </head>
 <body class='web-applications' id='hello'>
-<%= yield %>
+<div class='wrapper'>
+  <div id='menu'>
+    <nav id='menu' class='menu'>
+      <ul>
+        <li class='lang-version'>
+        <a class='lang-version-url' href='/'>
+          <i class='flag en' title='English'></i>
+        </a>
+        </li>
+        <li class='lang-version'>
+        <a class='lang-version-url' href='/nl'>
+          <i class='flag nl' title='Nederlands'></i>
+        </a>
+        </li>
+        <li class='first'>
+        <a href="/">Home</a></li>
+        <li>
+        <a href="/about-kabisa">About Kabisa</a></li>
+        <li class='selected'>
+        <a href="/web-applications">Web applications</a></li>
+        <li>
+        <a href="/enterprise-mobile">Enterprise Mobile</a></li>
+        <li>
+        <a href="/clients">Clients</a></li>
+        <li>
+        <a href="/jobs">Jobs</a></li>
+        <li>
+        <a href="http://blog.kabisa.nl/">Blog</a></li>
+        <li class='last'>
+        <a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <h1 class='header'>Ruby on Rails & Java experts</h1>
+  </div>
+  <div id='logo'>
+    <a href="/"><img alt="Logo" src="/assets/logo-7456ff79fa2f4a5d72514a807733182d.png" /></a>
+  </div>
+</div>
+<div id='main'>
+  <%= yield %>
+</div>
+<div class='reset'></div>
+<div id='footer'>
+  <div id="footer_content">
+    <div class="footer_col" id="footer_col1">
+      <h1>How may we help you?</h1>
+      <p>We would love to hear from you. Contact Kabisa at +31(0)495 43 07 98 or use our convenient contact form <a href="/contact">here</a>. We want to help your business.</p>
+    </div>
+    <div class="footer_col" id="footer_col2" style="width: 150px;">
+      <h1>Kabisa ICT</h1>
+      <p>
+      Marconilaan 8
+      <br />
+      6003 DD Weert
+      <br />
+      Email: info@kabisa.nl</p>
+    </div>
+    <div class="footer_col" id="footer_col3">
+      <h1>Navigate our site</h1>
+      <ul>
+        <li><a href="/" title="Home">Home</a>
+        </li>
+        <li><a href="/about-kabisa" title="About Kabisa">About Kabisa</a>
+        </li>
+        <li><a href="/clients" title="Clients">Clients</a>
+        </li>
+
+        <li><a href="/jobs" title="Jobs">Jobs</a>
+        </li>
+        <li><a href="http://blog.kabisa.nl/" title="Blog">Blog</a>
+        </li>
+        <li><a href="/contact" title="Contact">Contact&#160;</a>
+        </li>
+      </ul>
+      <p class='hiring'>Kabisa is hiring! Please click <a href="/jobs">here</a> to see all positions.</p>
+    </div>
+    <div class="footer_col" id="footer_col4">
+      <h1>Services</h1>
+      <ul>
+        <li><a href="/services/extra-services" title="Extra Services">Extra Services</a>
+        </li>
+        <li><a href="/services/agile-scrum" title="Agile Scrum">Agile Scrum</a>
+        </li>
+        <li><a href="/enterprise-mobile" title="Enterprise Mobile">Enterprise Mobile</a>
+        </li>
+        <li><a href="/web-applications" title="Web applications">Web applications</a>
+        </li>
+        <li><a href="/services/java-jee" title="Java &amp; JEE">Java &amp; JEE</a>
+        </li>
+        <li><a href="/services/ruby-on-rails" title="Ruby on Rails">Ruby on Rails</a>
+        </li>
+        <li><a href="/services/system-integration" title="System integration">System Integration</a>
+        </li>
+        <li><a href="/services/hosting" title="Hosting">Hosting</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 </body>
 </html>
